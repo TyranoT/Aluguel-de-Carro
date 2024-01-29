@@ -1,0 +1,12 @@
+print('='*60)
+dias = int(input('Quantos dias com o carro? '))
+km = float(input('Quantos km rodados? '))
+total = (60 * dias) + (0.15 * km)
+juros = total * 5 / 100
+print('='*60)
+print('Dias com o automovél: {} dias \nKm rodados com o automovél: {}Km \nValor Total: R${}'.format(dias, km, total))
+print('')
+print('A vista: R${:.2f} \nEm 2x: R${:.2f} \nEm 3x: R${:.2f} \nEm 4x: R${:.2f} \nEm 5x: R${:.2f}'.format(total,total/2+juros,total/3+juros, total/4+juros, total/5+juros))
+print('')
+print('Obs: Valor Total divido em a partir de 2x ficará submetido a 5%, de juros!')
+print('='*60)
